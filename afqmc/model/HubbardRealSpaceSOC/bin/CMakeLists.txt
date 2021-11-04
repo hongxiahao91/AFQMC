@@ -1,0 +1,4 @@
+add_executable(generateNumeratorHubbardSOC generateNumeratorHubbardSOC.cpp)
+target_link_libraries(generateNumeratorHubbardSOC commonHao ${EXT_LIBRARIES})
+set_target_properties(generateNumeratorHubbardSOC PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+install(TARGETS generateNumeratorHubbardSOC DESTINATION bin)

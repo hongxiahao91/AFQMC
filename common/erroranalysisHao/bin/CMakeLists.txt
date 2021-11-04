@@ -1,0 +1,9 @@
+add_executable(doubleErrorAnalysis doubleErrorAnalysis.cpp ${SOURCE_HEADERS})
+target_link_libraries(doubleErrorAnalysis errorAnalysisHao mpiHao ${EXT_LIBRARIES})
+set_target_properties(doubleErrorAnalysis PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+install(TARGETS doubleErrorAnalysis DESTINATION bin)
+
+add_executable(complexDoubleErrorAnalysis complexDoubleErrorAnalysis.cpp ${SOURCE_HEADERS})
+target_link_libraries(complexDoubleErrorAnalysis errorAnalysisHao mpiHao ${EXT_LIBRARIES})
+set_target_properties(complexDoubleErrorAnalysis PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+install(TARGETS complexDoubleErrorAnalysis DESTINATION bin)

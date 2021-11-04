@@ -1,0 +1,9 @@
+add_executable(NumDenErrorAnalysis NumDenErrorAnalysis.cpp)
+target_link_libraries(NumDenErrorAnalysis commonHao ${EXT_LIBRARIES})
+set_target_properties(NumDenErrorAnalysis PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+install(TARGETS NumDenErrorAnalysis DESTINATION bin)
+
+add_executable(NumArrayDenErrorAnalysis NumArrayDenErrorAnalysis.cpp)
+target_link_libraries(NumArrayDenErrorAnalysis commonHao ${EXT_LIBRARIES})
+set_target_properties(NumArrayDenErrorAnalysis PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+install(TARGETS NumArrayDenErrorAnalysis DESTINATION bin)
